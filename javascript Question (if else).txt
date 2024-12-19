@@ -1,0 +1,22 @@
+1. Check if a person is an adult, a teenager, or a child based on their age:
+This question asks you to classify a person based on their age:
+
+If the age is 18 or more, the person is an adult.
+If the age is between 13 and 17 (inclusive), the person is a teenager.
+
+2.  Check if a student passed, failed, or has a grade in between:
+This question involves categorizing a student's performance based on their grade:
+
+If the grade is 90 or higher, the student is rated as excellent.
+If the grade is between 70 and 89, the student is rated as good.
+If the grade is between 50 and 69, the student is considered to have passed.
+If the grade is below 50, the student failed.
+
+
+3. Check if a person is eligible for voting:
+This question checks if a person is old enough to vote:
+
+If the person's age is 18 or more, they are eligible to vote.
+If the person's age is less than 18, they are not eligible to vote.
+
+4. 

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>operator using in function</h1>
+    <h2 class="sum">Sum (a + b) : <span id="sum"></span></h2> 
+    <hr>
+    <h2 class="mul">Mul (a * b) : <span id="mul"></span></h2>
+    <hr>
+    <h2 class="divide">Divide (a / b) : <span id="divide"></span></h2>
+    <hr>
+    <h2 class="sub">Sub (a - b) : <span  id="sub"></span></h2>
+    <hr>
+    <script>
+
+        function sumNum(a , b){
+            return a + b;
+        }
+        function divideNum(a , b){
+            return a / b;
+        }
+        function mulNum(a , b){
+            return a * b;
+        }
+        function subNum(a , b){
+            return a / b;
+        }
+        // console.log(subNum(2,1));
+        // document.querySelector("#sum").innerText = sumNum(5, 2);
+        // document.querySelector("#mul").innerText = mulNum(5, 2);
+        // document.querySelector("#divide").innerText = divideNum(5, 2);
+        // document.querySelector("#sub").innerText = subNum(5, 2);
+
+        for(let i = 0 ; i < 10 ; i++){
+            console.log(`${i} => (2 + 1) = ${sumNum(2,1)}`);
+        }
+    </script>
+</body>
+</html>

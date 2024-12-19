@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PatternOne</title>
+    <script src="script.js" defer></script>
+    <style>
+      button {
+        margin: 5px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      section {
+        border: 2px solid black;
+        padding: 10px 15px;
+        margin: 15px;
+        display: none;
+        h2 {
+          text-align: center;
+          color: peru;
+        }
+      }
+
+      .active {
+        display: block;
+      }
+      /* Keyframes for sliding in */
+      @keyframes slideIn {
+        from {
+          transform: translateY(100%);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      /* Apply animation to the section */
+      .slide-section {
+        animation: slideIn 1s ease-out;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Advance Tabs !!!</h1>
+    <button class="btns" id="cbtn">Chemistry</button>
+    <button class="btns" id="pbtn">Physics</button>
+    <button class="btns" id="mbtn">Math</button>
+
+    <section class="ccontent active con slide-section">
+      <h2>Chemistry</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad quaerat
+        recusandae harum consequuntur beatae sed possimus culpa velit saepe
+        magnam aliquam temporibus explicabo perferendis, sunt rem nisi soluta
+        facilis aspernatur.
+      </p>
+      <a href="#">Read More !!</a>
+    </section>
+
+    <section class="pcontent con slide-section">
+      <h2>Physics</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad quaerat
+        recusandae harum consequuntur beatae sed possimus culpa velit saepe
+        magnam aliquam temporibus explicabo perferendis, sunt rem nisi soluta
+        facilis aspernatur.
+      </p>
+      <a href="#">Read More !!</a>
+    </section>
+
+    <section class="mcontent con slide-section">
+      <h2>Math</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad quaerat
+        recusandae harum consequuntur beatae sed possimus culpa velit saepe
+        magnam aliquam temporibus explicabo perferendis, sunt rem nisi soluta
+        facilis aspernatur.
+      </p>
+      <a href="#">Read More !!</a>
+    </section>
+  </body>
+</html>

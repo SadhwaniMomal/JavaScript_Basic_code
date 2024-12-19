@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .active {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="button-1">vision</button>
+    <button class="button-2">mission</button>
+    <div class="active box1">visson</div>
+    <div class="active box2">mission</div>
+
+    <!-- start js -->
+    <script>
+      let btn1 = document.querySelector(".button-1");
+      let btn2 = document.querySelector(".button-2");
+      let box1 = document.querySelector(".box1");
+      let box2 = document.querySelector(".box2");
+      btn1.addEventListener("click" , () => {
+        box1.classList.remove("active");
+        box2.classList.add("active");
+      })
+      btn2.addEventListener("click" , () => {
+        box2.classList.remove("active");
+        box1.classList.add("active");
+
+      })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            display: flex;
+            .box{
+                width: 45px;
+                height: 45px;
+                border: 2px solid;
+                margin: 3px;
+                padding: 95px;
+                padding: 95px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="box box1">Mango</div>
+        <div class="box box2">Tomato</div>
+    </section>
+
+
+    <script>
+        let boxOne = document.querySelector('.box1');
+        let boxTwo = document.querySelector('.box2');
+        let oC =  boxOne.innerText;
+        let dC =  boxTwo.innerText;
+
+        boxOne.innerText = dC;
+        boxTwo.innerText = oC;
+    </script>
+</body>
+</html>

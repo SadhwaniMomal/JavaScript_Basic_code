@@ -1,0 +1,45 @@
+Assignment 1: Student's Favorite Subject
+Prompt:
+Create a program that asks for a student's name and their favorite subject. Then, display a message indicating that their teacher, Sir Abrar, teaches that subject.
+
+Instructions:
+
+Use prompt to get the student's name.
+Use another prompt to get their favorite subject.
+Use console.log to display the message.
+Assignment 2: Student Year and Teacher
+Prompt:
+Write a program that asks for a student's name and the year they are in. Display a message that says what year the student is in and who their teacher is.
+
+Instructions:
+
+Use prompt to get the student's name.
+Use another prompt to ask for their year.
+Use console.log to format the message correctly.
+Assignment 3: Class Announcement
+Prompt:
+Develop a program that requests a student's name and the name of the class they are in. Print a message stating that their teacher, Sir Abrar, teaches that class.
+
+Instructions:
+
+Get the student's name using prompt.
+Ask for the class name with another prompt.
+Log the announcement using console.log.
+Assignment 4: Favorite Activity
+Prompt:
+Create a program that prompts for a student's name and their favorite activity. Output a message saying that Sir Abrar is excited to see the student enjoying that activity.
+
+Instructions:
+
+Prompt the user for the student's name.
+Use another prompt to get their favorite activity.
+Use console.log to display the message.
+Assignment 5: Learning Goals
+Prompt:
+Write a program that asks for a student's name and one learning goal for the semester. Print a message indicating that Sir Abrar will help the student achieve that goal.
+
+Instructions:
+
+Use prompt to ask for the student's name.
+Prompt for their learning goal.
+Display the message with console.log.

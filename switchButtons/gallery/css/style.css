@@ -1,0 +1,27 @@
+.btns .allbtn{
+    padding: 10px 20px;
+    margin: 5px;
+    border: 2px solid palevioletred;
+    background-color: rgb(255, 255, 255);
+
+}
+.btns .activebtn{
+    background-color:palevioletred;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+
+.btns button:hover {
+    background-color: palevioletred;
+    color: white;
+}
+
+.cont-img{
+    display: none;
+}
+
+.active{
+    display: block;
+}

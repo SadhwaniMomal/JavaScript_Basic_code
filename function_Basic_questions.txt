@@ -1,0 +1,19 @@
+1. Function Basics
+   Write a function named greet that takes a name as a parameter and logs "Hello, [name]!" to the console.
+
+2. Add Two Numbers
+   Create a function add that takes two numbers as arguments and returns their sum.
+
+3. Find the Largest Number
+   Write a function findLargest that takes three numbers and returns the largest among them.
+
+4. Check Even or Odd
+   Create a function isEven that takes a number and returns true if the number is even and false otherwise.
+
+5.Reverse a String
+  Write a function reverseString that takes a string and returns the string reversed.
+
+6.check for Palindrome
+  Write a function isPalindrome that checks if a given string is a palindrome (reads the same backward as forward).
+
+7.

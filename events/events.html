@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="#">
+      <input type="text" id="inputOne" placeholder="Enter your numbers" />
+      <select name="" id="operator">
+        <option value="select operator">select operator</option>
+        <option value="+">+</option>
+        <option value="-">-</option>
+      </select>
+      <input type="text" id="inputTwo" placeholder="Enter your numbers" />
+      <button id="cal">Calculate</button>
+     
+      <input type="text" id="result" placeholder="Results Here" disabled />
+    </form>
+
+    <!-- Js Here -->
+    <script>
+      let cal = document.querySelector("#cal");
+      let result = document.querySelector("#result");
+
+      // click event
+      cal.addEventListener("click", (e) => {
+        e.preventDefault(); // Prevent form submission
+        let inputOne = Number(document.querySelector("#inputOne").value);
+        let operator = document.querySelector("#operator").value;
+        let inputTwo = Number(document.querySelector("#inputTwo").value);
+
+        if(operator === "+"){
+            result.value = inputOne + inputTwo;
+        }else if(operator === "-"){
+            result.value = inputOne - inputTwo;
+        }else{
+            alert("Please select an operator");
+            result.value = ""; 
+        }
+
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculator</title>
+  <style>
+    .btn, .input {
+      padding: 10px 20px;
+      margin: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .input {
+      width: 200px;
+      text-align: right;
+    }
+    .container {
+      display: inline-block;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <input type="text" id="inputOne" class="input" placeholder="0" disabled />
+    <div>
+      <button class="btn num" data-value="1">1</button>
+      <button class="btn num" data-value="2">2</button>
+      <button class="btn num" data-value="3">3</button>
+    </div>
+    <div>
+      <button class="btn op" data-value="-">-</button>
+      <button class="btn op" data-value="+">+</button>
+      <button class="btn op" data-value="/">/</button>
+      <button class="btn op" data-value="*">*</button>
+    </div>
+    <div>
+      <button class="btn" id="clear">C</button>
+      <button class="btn" id="equal">=</button>
+    </div>
+  </div>
+
+  <script>
+    // Variables to hold values
+    let currentInput = '';
+    let previousInput = '';
+    let operator = null;
+
+    // Reference to display input
+    const display = document.querySelector("#inputOne");
+
+    // Add event listeners for number buttons
+    document.querySelectorAll('.num').forEach(button => {
+      button.addEventListener('click', () => {
+        currentInput += button.dataset.value;
+        display.value = currentInput;
+      });
+    });
+
+    // Add event listeners for operator buttons
+    document.querySelectorAll('.op').forEach(button => {
+      button.addEventListener('click', () => {
+        if (currentInput === '') return; // Ignore if no number is input
+        if (previousInput !== '') calculate();
+        operator = button.dataset.value;
+        previousInput = currentInput;
+        currentInput = '';
+      });
+    });
+
+    // Add event listener for "=" button
+    document.querySelector('#equal').addEventListener('click', () => {
+      if (currentInput === '' || previousInput === '') return;
+      calculate();
+      operator = null;
+    });
+
+    // Add event listener for "C" (Clear) button
+    document.querySelector('#clear').addEventListener('click', () => {
+      currentInput = '';
+      previousInput = '';
+      operator = null;
+      display.value = '';
+    });
+
+    // Perform calculation
+    function calculate() {
+      let result;
+      const num1 = parseFloat(previousInput);
+      const num2 = parseFloat(currentInput);
+      switch (operator) {
+        case '+':
+          result = num1 + num2;
+          break;
+        case '-':
+          result = num1 - num2;
+          break;
+        case '*':
+          result = num1 * num2;
+          break;
+        case '/':
+          result = num2 === 0 ? 'Error' : num1 / num2;
+          break;
+        default:
+          return;
+      }
+      display.value = result;
+      currentInput = result.toString();
+      previousInput = '';
+    }
+  </script>
+</body>
+</html>

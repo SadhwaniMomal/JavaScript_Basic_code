@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let gameNum = 24; // The correct number
+      let userNum = prompt("Guess the game number:"); // Prompt the user
+
+      // if(userNum == gameNum ){
+      //   alert("Congratulations! You guessed the correct number!");
+      // }
+      // else if(userNum > gameNum){
+      //   alert("Too high! Try again.");
+      //   userNum = prompt("Guess the game number:");
+      // }
+      // else{
+      //   alert("Too low! Try again.");
+      //   userNum = prompt("Guess the game number:");
+      // }
+
+      while (userNum != gameNum) {
+        // Loop until the user guesses correctly
+        if (userNum > gameNum) {
+          userNum = prompt("Too high! Try again:");
+        } else {
+          userNum = prompt("Too low! Try again:");
+        }
+      }
+
+      // alert("Congratulations! You guessed the correct number!");
+    </script>
+  </body>
+</html>

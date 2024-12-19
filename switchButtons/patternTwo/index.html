@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PatternOne</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <style>
+        button{
+            margin: 5px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        section{
+            border: 2px solid black;
+            padding: 10px 15px;
+            margin: 15px;
+            display: none;
+            h2{
+                text-align: center;
+                color: peru;
+            }
+        }
+
+        .active{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Advance Tabs !!!</h1>
+    <button id="cbtn">Chemistry</button>
+    <button id="pbtn">Physics</button>
+    <button id="mbtn">Math</button>
+
+    <section class="ccontent active" class="animated"  data-aos="fade-right">
+        <h2>Chemistry</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad quaerat recusandae harum consequuntur beatae sed possimus culpa velit saepe magnam aliquam temporibus explicabo perferendis, sunt rem nisi soluta facilis aspernatur.
+        </p>
+        <a href="#">Read More !!</a>
+    </section>
+
+    <section class="pcontent" class="animated" data-aos="fade-left">
+        <h2>Physics</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad quaerat recusandae harum consequuntur beatae sed possimus culpa velit saepe magnam aliquam temporibus explicabo perferendis, sunt rem nisi soluta facilis aspernatur.
+        </p>
+        <a href="#">Read More !!</a>
+    </section>
+
+    <section class="mcontent" class="animated" data-aos="flip-left">
+        <h2>Math</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad quaerat recusandae harum consequuntur beatae sed possimus culpa velit saepe magnam aliquam temporibus explicabo perferendis, sunt rem nisi soluta facilis aspernatur.
+        </p>
+        <a href="#">Read More !!</a>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init();
+    </script>
+</body>
+</html>

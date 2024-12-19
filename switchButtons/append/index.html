@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <h1>Title:nothing</h1>
+    </div>
+
+    <script>
+        let main = document.querySelector(".main");
+        let divEle = document.createElement("div");
+        let head1 = document.querySelector("h1")
+        divEle.innerText = "HEllo World";
+        // main.appendChild(divEle);
+
+        main.insertBefore(divEle, head1);
+    </script>
+</body>
+</html>

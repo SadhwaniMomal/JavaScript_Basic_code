@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let correct = 123; 
+      let guess = parseInt(prompt("Guess the number:")); 
+      if(guess == correct)
+      {
+        alert("Correct");
+      }
+      else{
+        for(let i = 0 ; i <= 2 ; i++ ){
+            guess = parseInt(prompt("guess your correct number"));
+            if(guess == correct){
+                alert("Correct");
+                break;
+            }
+        }
+        if(guess != correct){
+            alert("You are out of tries");
+        }
+      }
+
+    </script>
+  </body>
+</html>
