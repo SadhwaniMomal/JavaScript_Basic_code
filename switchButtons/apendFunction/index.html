@@ -87,6 +87,9 @@
         <div class="col-auto">
           <button type="submit" id="addBtn" class="btn btn-success">Add</button>
         </div>
+        <div class="text-center mt-3">
+          <button id="clearBtn" class="btn btn-danger">Clear All Tasks</button>
+        </div>        
       </form>
 
       <div class="row justify-content-center list-container mt-4">
@@ -126,6 +129,7 @@
       let inputBox = document.getElementById("taskInput");
       let addBtn = document.getElementById("addBtn");
       let listContainer = document.querySelector(".list-name");
+      let clearBtn = document.getElementById("clearBtn");
 
       addBtn.addEventListener("click", (e) => {
         e.preventDefault();
@@ -156,11 +160,15 @@
         },
         false
       );
+      
 
       function saveTask() {
         localStorage.setItem("task", listContainer.innerHTML);
       }
-
+      clearBtn.addEventListener("click", () => {
+  localStorage.removeItem("task"); // Clears the "task" item
+  listContainer.innerHTML = "";   // Clears the displayed list
+});
       function loadTask() {
         listContainer.innerHTML = localStorage.getItem("task");
       }
